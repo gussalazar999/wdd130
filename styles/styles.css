@@ -1,16 +1,27 @@
+:root {
+--heading-background-color: darkblue;
+--heading-text-color: rgb(1, 108, 148);
+--body-background-color: white;
+
+}
+
 nav {
-background-color: darkblue;
+background-color: var(--heading-background-color);
 padding: 10px;
 }
 
 nav a {
 color: white;
-display: block;
+display:inline-block;
 padding: 20px;
 }
 
+body{
+    background-color: var(--body-background-color);
+}
+
 h1 {
-color: darkblue;
+color: var(--heading-text-color);
 }
 
 img {
@@ -26,7 +37,8 @@ padding: 10px;
 }
 
 main {
-   max-width: 840px; 
+   max-width: 840px;
+   color: #333;
 }
 
 
