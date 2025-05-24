@@ -68,10 +68,12 @@ article {
     top: 100px;
     width: 80%;
     text-align: center;
+    background-color: rgba(134, 202, 196, 0.8);
 }
 
 .hero article img {
     float: right;
     width: 500px;
+    border-radius: 8px;
 }
 
