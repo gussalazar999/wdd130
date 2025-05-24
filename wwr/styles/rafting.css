@@ -64,16 +64,21 @@ h1 {
 }
 
 article {
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 350px;
+    right: 65px;
     width: 80%;
-    text-align: center;
+    text-align: left;
     background-color: rgba(134, 202, 196, 0.8);
 }
 
 .hero article img {
     float: right;
-    width: 500px;
-    border-radius: 8px;
+    width: 125px;
+    border-radius: 5px;
+}
+
+footer img {
+    width: 50px;
 }
 
