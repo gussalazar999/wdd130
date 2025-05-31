@@ -3,8 +3,8 @@
     --secondary-color: #7893A5;
     --accent1-color: #597081;
     --accent2-color: #4B656C;
-    --heading-font: "WDXL Lubrifont TC";
-    --body-font: "Zain";
+    --heading-font: "WDXL Lubrifont TC", sans-serif; /* Fallback font */
+    --body-font: "Zain", sans-serif;
 }
 
 header {
