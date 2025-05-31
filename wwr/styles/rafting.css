@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "WDXL Lubrifont TC";
+    src: url("fonts/WD-XLLubrifontTC-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
 :root {
     --primary-color: #7EA0B7;
     --secondary-color: #7893A5;
