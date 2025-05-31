@@ -11,7 +11,7 @@
     --accent1-color: #597081;
     --accent2-color: #4B656C;
     --heading-font: "WDXL Lubrifont TC", sans-serif; /* Fallback font */
-    --body-font: "Zain", sans-serif;
+    --body-font: "Zain", sans-serif; /* Fallback font */
 }
 
 header {
@@ -88,4 +88,3 @@ article {
 footer img {
     width: 50px;
 }
-
