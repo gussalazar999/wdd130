@@ -3,6 +3,7 @@
     src: url("fonts/WD-XLLubrifontTC-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 :root {
@@ -10,13 +11,21 @@
     --secondary-color: #7893A5;
     --accent1-color: #597081;
     --accent2-color: #4B656C;
-    --heading-font: "WDXL Lubrifont TC", sans-serif; /* Fallback font */
-    --body-font: "Zain", sans-serif; /* Fallback font */
+    --heading-font: "WDXL Lubrifont TC", sans-serif;
+    --body-font: "Zain", sans-serif;
 }
 
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+header img {
+    width: 100px; /* Adjust size as needed */
 }
 
 * {
@@ -45,8 +54,15 @@ nav, p, section, article {
     padding: 8px;
 }
 
+nav a {
+    margin: 0 10px;
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+
 .socialmedia a {
     text-decoration: none;
+    margin: 0 5px;
 }
 
 .hero {
@@ -83,6 +99,53 @@ article {
     float: right;
     width: 125px;
     border-radius: 5px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.history-content p {
+    flex: 1;
+    text-align: justify;
+}
+
+.history-content img {
+    width: 200px;
+    height: auto;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 150px;
+    height: auto;
+}
+
+.adventure-gallery figcaption {
+    font-size: 14px;
+    color: var(--accent2-color);
+    margin-top: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--primary-color);
 }
 
 footer img {
