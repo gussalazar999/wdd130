@@ -1,68 +1,153 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Rafting park website: This is the 'About Us' portion of the website">
-    <meta name="author" content="Gustavo Salazar">
+@font-face {
+    font-family: "WDXL Lubrifont TC";
+    src: url("fonts/WD-XLLubrifontTC-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
-    <!-- Preconnect for Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Google Fonts for Zain -->
-    <link href="https://fonts.googleapis.com/css2?family=Zain:wght@300&display=swap" rel="stylesheet">
+:root {
+    --primary-color: #7EA0B7;
+    --secondary-color: #7893A5;
+    --accent1-color: #597081;
+    --accent2-color: #4B656C;
+    --heading-font: "WDXL Lubrifont TC", sans-serif;
+    --body-font: "Zain", sans-serif;
+}
 
-    <title>White River Rafting: About Us</title>
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
 
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
+header img {
+    width: 100px; /* Adjust size as needed */
+}
 
-    <body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <header>
-            <img src="images/z-raftingbw.png" alt="Rafting Company Logo">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </header>
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
 
-        <main>
-            <div class="hero">
-                <img src="images/rafting41_1024.jpg" alt="Background image">
-                <h1>White Water Rafting</h1>
-                <article>
-                    <img src="images/rafting59_600.jpg" alt="Happy participating people">
-                    <p>Our mission is simple... Create the BEST WATERSPORTS MEMORIES OF YOUR LIFE!</p>
-                </article>
-            </div>
-            <section>
-                <h2>History</h2>
-                <p>It all started with a dream I had at the White River where reality was difficult to differentiate from a dream and that is when I knew I could make it REAL</p>
-            </section>
-            <section>
-                <h2>Adventure Awaits You!</h2>
-                <img src="images/rafting47_6001.jpg" alt="picture 1">
-                <img src="images/rafting26_6002.jpg" alt="picture 2">
-                <img src="images/rafting22_6003.jpg" alt="picture 3">
-                <img src="images/rafting20_6004.jpg" alt="picture 4">
-                <img src="images/rafting65_6005.jpg" alt="picture 5">
-            </section>
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
 
-        </main>
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
 
-        <footer>
-            <p>© 2025 | White Water Rafting | Gustavo Salazar</p>
-            <nav class="socialmedia">
-                <a href="https://facebook.com"></a>
-                <img src="images/facebook.png" alt="Facebook">
-                <a href="https://instagram.com"></a>
-                <img src="images/instagram.png" alt="Instagram">
-                <a href="https://x.com"></a>
-                <img src="images/x.png" alt="X">
-            </nav>
-        </footer>
-    </body>
-</html>
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: black;
+}
+
+article {
+    position: absolute;
+    top: 350px;
+    right: 65px;
+    width: 80%;
+    text-align: left;
+    background-color: rgba(134, 202, 196, 0.8);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    border-radius: 5px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.history-content p {
+    flex: 1;
+    text-align: justify;
+}
+
+.history-content img {
+    width: 200px;
+    height: auto;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 150px;
+    height: auto;
+}
+
+.adventure-gallery figcaption {
+    font-size: 14px;
+    color: var(--accent2-color);
+    margin-top: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--primary-color);
+}
+
+footer img {
+    width: 50px;
+}
