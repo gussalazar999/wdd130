@@ -24,7 +24,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #fff; /* Added for legibility */
+    background-color: #fff;
 }
 
 header, main, footer {
@@ -73,25 +73,28 @@ nav ul li a:hover {
     color: #fff;
 }
 
-h1, h2 {
-    font-family: var(--heading-font);
-    text-align: center;
-    padding: 20px;
-}
-
 h1 {
-    color: var(--primary-color);
+    font-family: var(--heading-font);
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
+    text-align: center;
     background-color: rgba(89, 112, 129, 0.9);
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 20px;
+    color: var(--accent2-color); /* Explicit color for contrast */
+}
+
 .hero {
     position: relative;
+    min-height: 400px; /* Ensure space for h1 */
 }
 
 .hero img {
@@ -248,7 +251,7 @@ section {
 .team {
     text-align: center;
     padding: 20px 0;
-    background-color: #fff; /* Added for legibility */
+    background-color: #fff;
 }
 
 .team-members {
