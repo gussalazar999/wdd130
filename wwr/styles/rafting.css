@@ -78,8 +78,8 @@ h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
+    padding: 16px;
     background-color: rgba(89, 112, 129, 0.9);
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -87,14 +87,19 @@ h1 {
 
 h2 {
     font-family: var(--heading-font);
+    text-align: left;
+    padding: 20px 0;
+    color: var(--accent2-color);
+}
+
+.home h2 {
     text-align: center;
-    padding: 20px;
-    color: var(--accent2-color); /* Explicit color for contrast */
+    width: 100%;
 }
 
 .hero {
     position: relative;
-    min-height: 400px; /* Ensure space for h1 */
+    min-height: 400px;
 }
 
 .hero img {
@@ -247,6 +252,10 @@ section {
     background-color: #356f9a;
 }
 
+.newsletter .contact-form {
+    max-width: 400px; /* Adjust for newsletter form */
+}
+
 /* Team section styling */
 .team {
     text-align: center;
@@ -279,6 +288,95 @@ section {
     font-size: 0.9em;
 }
 
+/* Home section styling */
+.home {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.home h2 {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+.home p {
+    text-align: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.home .cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4682b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.home .cta:hover {
+    background-color: #356f9a;
+}
+
+.home-gallery {
+    width: 100%;
+    margin: 0;
+}
+
+.home-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.home-gallery img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.home-gallery figcaption {
+    font-size: 18px;
+    color: var(--accent2-color);
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Offerings section styling */
+.offerings {
+    margin: 16px;
+    padding: 8px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-item p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Responsive design for mobile */
 @media (max-width: 600px) {
     header {
@@ -306,6 +404,18 @@ section {
     .history-content {
         flex-direction: column;
     }
+    .home {
+        flex-direction: column;
+    }
+    .home-gallery img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .home h2,
+    .home p,
+    .home .cta {
+        width: 100%;
+    }
     .history-content img {
         width: 100%;
         max-width: 300px;
@@ -322,30 +432,39 @@ section {
     }
 }
 
-.home h2 {
-    flex: 1 0 300px; /* Minimum width for text */
-    text-align: left;
-    padding: 0;
+/* Commented out original home-gallery (if needed later) */
+/*
+.home-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-.home p {
-    flex: 1 0 300px; /* Allow text to wrap */
-    margin: 0 0 10px;
+.home-gallery figure {
+    text-align: left;
+    flex: 1;
+    min-width: 140px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
 }
 
 .home-gallery img {
-    max-width: 200px;
-    height: auto;
-    margin: 15px;
-    float: left;
-}
-
-.home-gallery2 img {
+    width: 100%;
     max-width: 300px;
     height: auto;
-    margin: 20px;
-    float: bottom;
 }
+
+.home-gallery figcaption {
+    font-size: 20px;
+    color: var(--accent2-color);
+    margin-top: 0;
+    flex-shrink: 0;
+    width: 200px;
+}
+*/
 
 figcaption strong {
     font-weight: bold;
