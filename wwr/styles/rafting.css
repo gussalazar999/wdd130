@@ -322,31 +322,30 @@ section {
     }
 }
 
-.home .home-gallery {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    flex-wrap: wrap;
+.home h2 {
+    flex: 1 0 300px; /* Minimum width for text */
+    text-align: left;
+    padding: 0;
 }
 
-.home-gallery figure {
-    text-align: left;
-    flex: 1;
-    min-width: 140px;
+.home p {
+    flex: 1 0 300px; /* Allow text to wrap */
+    margin: 0 0 10px;
 }
 
 .home-gallery img {
-    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 15px;
+    float: left;
+}
+
+.home-gallery2 img {
     max-width: 300px;
     height: auto;
+    margin: 20px;
+    float: bottom;
 }
-
-.home-gallery figcaption {
-    font-size: 20px;
-    color: var(--accent2-color);
-    margin-top: 5px;
-}
-
 
 figcaption strong {
     font-weight: bold;
