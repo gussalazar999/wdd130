@@ -79,7 +79,7 @@ h1 {
 
 h2 {
     font-family: var(--heading-font);
-    color: var(white);
+    color: white; /* Fixed from var(white) to white */
 }
 
 .hero {
@@ -90,6 +90,10 @@ h2 {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.hero p{
+    color: black;
 }
 
 h1 {
@@ -252,17 +256,19 @@ section {
     background-color: #356f9a;
 }
 
-/* New styles for team section */
+/* Team section styling */
 .team {
     text-align: center;
     padding: 20px 0;
 }
 
 .team-members {
-    display: flex; /* Use Flexbox for horizontal layout */
+    display: flex; /* Ensure horizontal layout */
     justify-content: center; /* Center the items */
     gap: 20px; /* Space between member divs */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    max-width: 840px; /* Match main container width */
+    margin: 0 auto; /* Center the container */
 }
 
 .member {
