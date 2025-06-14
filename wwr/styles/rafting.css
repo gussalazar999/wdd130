@@ -322,6 +322,32 @@ section {
     }
 }
 
+.home .home-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.home-gallery figure {
+    text-align: left;
+    flex: 1;
+    min-width: 140px;
+}
+
+.home-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.home-gallery figcaption {
+    font-size: 20px;
+    color: var(--accent2-color);
+    margin-top: 5px;
+}
+
+
 figcaption strong {
     font-weight: bold;
 }
