@@ -72,9 +72,14 @@ nav ul li a:hover {
     color: #fff;
 }
 
-h1, h2 {
+h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(white);
 }
 
 .hero {
