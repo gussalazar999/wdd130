@@ -24,6 +24,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #fff; /* Added for legibility */
 }
 
 header, main, footer {
@@ -72,14 +73,21 @@ nav ul li a:hover {
     color: #fff;
 }
 
-h1 {
+h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
 }
 
-h2 {
-    font-family: var(--heading-font);
-    color: white; /* Fixed from var(white) to white */
+h1 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    background-color: rgba(89, 112, 129, 0.9);
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .hero {
@@ -90,26 +98,6 @@ h2 {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.hero p{
-    color: black;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: rgba(89, 112, 129, 0.9);
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-h2 {
-    text-align: center;
-    padding: 20px;
 }
 
 article {
@@ -260,26 +248,27 @@ section {
 .team {
     text-align: center;
     padding: 20px 0;
+    background-color: #fff; /* Added for legibility */
 }
 
 .team-members {
-    display: flex; /* Ensure horizontal layout */
-    justify-content: center; /* Center the items */
-    gap: 20px; /* Space between member divs */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    max-width: 840px; /* Match main container width */
-    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 .member {
     text-align: center;
-    max-width: 200px; /* Limit width for consistency */
+    max-width: 200px;
 }
 
 .member img {
-    width: 100%; /* Make images responsive within max-width */
+    width: 100%;
     height: auto;
-    border-radius: 50%; /* Optional: Circular images */
+    border-radius: 50%;
 }
 
 .member p {
@@ -289,9 +278,44 @@ section {
 
 /* Responsive design for mobile */
 @media (max-width: 600px) {
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact {
+        flex-direction: column;
+    }
+    address {
+        margin: 0 0 16px 0;
+    }
+    iframe {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .adventure-gallery figure {
+        min-width: 100%;
+    }
+    .history-content {
+        flex-direction: column;
+    }
+    .history-content img {
+        width: 100%;
+        max-width: 300px;
+    }
+    article {
+        position: static;
+        width: 100%;
+        right: auto;
+        top: auto;
+    }
     .team-members {
-        flex-direction: column; /* Stack vertically on small screens */
-        align-items: center; /* Center items */
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -325,42 +349,4 @@ footer .socialmedia a {
 footer img {
     width: 40px;
     height: auto;
-}
-
-@media (max-width: 600px) {
-    header {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    nav ul {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .contact {
-        flex-direction: column;
-    }
-    address {
-        margin: 0 0 16px 0;
-    }
-    iframe {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    .contact-gallery figure, .adventure-gallery figure {
-        min-width: 100%;
-    }
-    .history-content {
-        flex-direction: column;
-    }
-    .history-content img {
-        width: 100%;
-        max-width: 300px;
-    }
-    article {
-        position: static;
-        width: 100%;
-        right: auto;
-        top: auto;
-    }
 }
