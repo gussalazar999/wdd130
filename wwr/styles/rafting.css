@@ -171,7 +171,6 @@ section {
 .history-content img {
     width: 200px;
     height: auto;
-    loading: lazy;
 }
 
 .adventures .adventure-gallery {
@@ -191,7 +190,6 @@ section {
     width: 100%;
     max-width: 150px;
     height: auto;
-    loading: lazy;
 }
 
 .adventure-gallery figcaption {
@@ -217,7 +215,6 @@ section {
     width: 100%;
     max-width: 250px;
     height: auto;
-    loading: lazy;
 }
 
 .contact-gallery figcaption {
