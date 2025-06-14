@@ -101,6 +101,11 @@ h2 {
     padding: 20px;
 }
 
+address {
+    text-align: left;
+    
+}
+
 article {
     position: absolute;
     top: 350px;
@@ -216,3 +221,8 @@ footer img {
     font-size: 14px;
     color: var(--accent2-color);
     margin-top: .5px;
+}
+
+figcaption strong {
+    font-weight: bold;
+}
