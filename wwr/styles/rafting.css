@@ -24,7 +24,6 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #fff; /* Added to ensure legibility with inherited styles */
 }
 
 header, main, footer {
@@ -95,7 +94,7 @@ h1 {
     padding: 16px;
     text-align: center;
     background-color: rgba(89, 112, 129, 0.9);
-    color: #fff; /* Added for legibility */
+    color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -111,7 +110,6 @@ article {
     width: 80%;
     text-align: left;
     background-color: rgba(134, 202, 196, 0.8);
-    color: var(--accent1-color); /* Added for legibility */
     padding: 16px;
 }
 
@@ -122,25 +120,21 @@ article {
     margin-left: 10px;
 }
 
-.content-section {
+.contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
     margin: 16px;
     padding: 8px;
 }
 
-.contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.contact-info {
-    flex: 1;
-    min-width: 200px;
-}
-
 address {
     text-align: left;
+    margin: 0 16px 0 0;
     font-style: normal;
+    flex: 1;
+    min-width: 200px;
 }
 
 address p {
@@ -149,82 +143,66 @@ address p {
 }
 
 iframe {
+    display: block;
     width: 400px;
     height: 300px;
+    margin: 0 0 16px 0;
     border: 0;
     flex-shrink: 0;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    margin: 16px 0;
-    padding: 16px;
-    background-color: rgba(126, 160, 183, 0.1);
-    color: var(--accent1-color); /* Added for legibility */
-}
-
-.contact-form label {
-    font-weight: bold;
-    color: var(--accent1-color);
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+section {
+    margin: 16px;
     padding: 8px;
-    border: 1px solid var(--accent2-color);
-    border-radius: 4px;
-    width: 100%;
 }
 
-.contact-form fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-.contact-form legend {
-    font-weight: bold;
-    margin-bottom: 8px;
-    color: var(--accent1-color);
-}
-
-.contact-form label input[type="radio"],
-.contact-form label input[type="checkbox"] {
-    margin-right: 8px;
-}
-
-.contact-form textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-.contact-form button {
-    padding: 12px 24px;
-    background-color: var(--primary-color);
-    color: #fff; /* Added for legibility */
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    width: auto;
-    align-self: flex-start;
-}
-
-.contact-form button:hover {
-    background-color: var(--accent1-color);
-}
-
-.team-profiles {
-    width: 100%;
-}
-
-.contact-gallery {
+.history-content {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.history-content p {
+    flex: 1;
+    text-align: justify;
+}
+
+.history-content img {
+    width: 200px;
+    height: auto;
+    loading: lazy;
+}
+
+.adventures .adventure-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+    flex: 1;
+    min-width: 140px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    loading: lazy;
+}
+
+.adventure-gallery figcaption {
+    font-size: 14px;
+    color: var(--accent2-color);
+    margin-top: 5px;
+}
+
+.contact .contact-gallery {
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -239,6 +217,7 @@ iframe {
     width: 100%;
     max-width: 250px;
     height: auto;
+    loading: lazy;
 }
 
 .contact-gallery figcaption {
@@ -257,7 +236,6 @@ footer {
     align-items: center;
     padding: 16px;
     background-color: var(--primary-color);
-    color: var(--accent2-color); /* Added for legibility */
 }
 
 footer p {
@@ -273,7 +251,6 @@ footer .socialmedia {
 
 footer .socialmedia a {
     text-decoration: none;
-    color: var(--accent2-color); /* Added for legibility */
 }
 
 footer img {
@@ -290,21 +267,18 @@ footer img {
         justify-content: center;
         flex-wrap: wrap;
     }
-    .contact-container {
+    .contact {
         flex-direction: column;
     }
-    .contact-info {
-        margin-bottom: 16px;
+    address {
+        margin: 0 0 16px 0;
     }
     iframe {
         width: 100%;
         max-width: 400px;
-        margin: 0 auto 16px;
+        margin: 0 auto;
     }
-    .contact-form {
-        padding: 8px;
-    }
-    .contact-gallery figure {
+    .contact-gallery figure, .adventure-gallery figure {
         min-width: 100%;
     }
     .history-content {

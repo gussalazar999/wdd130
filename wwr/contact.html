@@ -17,7 +17,7 @@
 <body>
     <header>
         <img src="images/z-raftingbw.png" alt="White River Rafting Company Logo">
-        <nav>
+        <nav role="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -30,59 +30,58 @@
         <div class="hero">
             <img src="images/contact_us.jpg" alt="White Water Rafting contact page hero image with river scenery">
             <h1>Contact White River Rafting Adventures</h1>
-        
-            <section class="contact-container">
-                <div class="contact-info">
-                    <h2>Contact Us!</h2>
-                    <address>
-                        <p>Phone: (512) 123-4567</p>
-                        <p>Address: 1234 White River Dr, San Marcos, TX 78888</p>
-                        <p>Email: <a href="mailto:whiteriveradv@mail.com">whiteriveradv@mail.com</a></p>
-                    </address>
-                </div>
-                <iframe title="Map to White River Rafting location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6919.016254522797!2d-97.9339366!3d29.878456099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865ca85da533845d%3A0x9d6d7cf023a6fdcd!2sRio%20Vista%20Park!5e0!3m2!1sen!2sus!4v1749869422640!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <form class="contact-form" action="/submit" method="post">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <fieldset>
-                        <legend>Purpose of Message:</legend>
-                        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-                    </fieldset>
-
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <label>
-                        <input type="checkbox" name="newsletter" value="subscribe"> Please subscribe me to the monthly newsletter
-                    </label>
-
-                    <button type="submit">Send Message</button>
-                </form>
-                <div class="team-profiles">
-                    <h2>Meet The Adventurous Team</h2>
-                    <div class="contact-gallery">
-                        <figure>
-                            <img src="images/employee1.jpg" alt="Bruno Zajac">
-                            <figcaption><strong>Bruno Zajac</strong>, Team Manager</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/employee2.jpg" alt="Sarah Smith">
-                            <figcaption><strong>Sarah Smith</strong>, Adventure Lead</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/employee3.jpg" alt="Askari Davood">
-                            <figcaption><strong>Askari Davood</strong>, Assistant Manager</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </section>
         </div>
+        <section class="contact">
+            <div class="contact-info">
+                <h2>Contact Us!</h2>
+                <address>
+                    <p>Phone: (512) 123-4567</p>
+                    <p>Address: 1234 White River Dr, San Marcos, TX 78888</p>
+                    <p>Email: <a href="mailto:whiteriveradv@mail.com">whiteriveradv@mail.com</a></p>
+                </address>
+            </div>
+            <iframe title="Map to White River Rafting location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6919.016254522797!2d-97.9339366!3d29.878456099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865ca85da533845d%3A0x9d6d7cf023a6fdcd!2sRio%20Vista%20Park!5e0!3m2!1sen!2sus!4v1749869422640!5m2!1sen!2sus" width="400" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form class="contact-form" action="/submit" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter" value="subscribe"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="team-profiles">
+                <h2>Meet The Adventurous Team</h2>
+                <div class="contact-gallery">
+                    <figure>
+                        <img src="images/employee1.jpg" alt="Bruno Zajac" loading="lazy">
+                        <figcaption><strong>Bruno Zajac</strong>, Team Manager</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee2.jpg" alt="Sarah Smith" loading="lazy">
+                        <figcaption><strong>Sarah Smith</strong>, Adventure Lead</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee3.jpg" alt="Askari Davood" loading="lazy">
+                        <figcaption><strong>Askari Davood</strong>, Assistant Manager</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>© 2025 | White Water Rafting | Gustavo Salazar</p>
