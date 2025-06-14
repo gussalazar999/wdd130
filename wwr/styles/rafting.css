@@ -76,10 +76,10 @@ nav ul li a:hover {
 h1 {
     font-family: var(--heading-font);
     position: absolute;
-    top: 20px;
+    top: 10px; /* Reduced from 20px to fit within smaller height */
     width: 100%;
     text-align: center;
-    padding: 16px;
+    padding: 10px; /* Reduced padding to fit */
     background-color: rgba(89, 112, 129, 0.9);
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -99,7 +99,7 @@ h2 {
 
 .hero {
     position: relative;
-    min-height: 400px;
+    min-height: 120px; /* Reduced from 200px to minimize gap */
 }
 
 .hero img {
@@ -130,7 +130,7 @@ article {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 16px;
+    margin: 4px; /* Further reduced from 8px to minimize gap */
     padding: 8px;
 }
 
@@ -253,7 +253,7 @@ section {
 }
 
 .newsletter .contact-form {
-    max-width: 400px; /* Adjust for newsletter form */
+    max-width: 400px;
 }
 
 /* Team section styling */
