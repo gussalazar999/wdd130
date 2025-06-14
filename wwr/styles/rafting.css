@@ -98,6 +98,7 @@ h1 {
 
 h2 {
     text-align: center;
+    padding: 20px;
 }
 
 article {
@@ -200,9 +201,9 @@ footer img {
 }
 
 .contact-gallery figure {
-    text-align: center;
+    text-align: left;
     flex: 1;
-    min-width: 250px;
+    min-width: 10px;
 }
 
 .contact-gallery img {
@@ -214,4 +215,4 @@ footer img {
 .contact-gallery figcaption {
     font-size: 14px;
     color: var(--accent2-color);
-    margin-top: 5px;
+    margin-top: .5px;
