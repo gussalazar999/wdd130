@@ -386,6 +386,7 @@ p {
 .trips-content .trip-section p {
     max-width: 600px;
     margin: 0 auto;
+    font-size: 1.5em; /* Increased font size for emphasis */
 }
 
 .trips-content .trip-grid {
@@ -427,6 +428,13 @@ p {
     font-weight: bold;
     color: #2E3A40;
     margin: 10px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #597081;
+    margin: 20px 0;
 }
 
 /* Media Queries */
@@ -485,6 +493,9 @@ p {
     }
     .grid-container {
         grid-template-columns: 1fr;
+    }
+    .trips-content .trip-section p {
+        font-size: 1.2em; /* Slightly reduced for mobile readability */
     }
 }
 
