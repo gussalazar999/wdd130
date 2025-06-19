@@ -288,13 +288,13 @@ section {
     gap: 10px;
 }
 
-.home h2 {
+h2, .home h2 {
     text-align: center;
     width: 100%;
     padding: 0;
 }
 
-.home p {
+p, .home p {
     text-align: left;
     margin: 10px 0;
     width: 100%;
@@ -406,7 +406,7 @@ section {
         width: 100%;
         max-width: 100%;
     }
-    .home h2, .home p, .cta {
+    h2, p, .cta {
         width: 100%;
     }
     .history-content img {
