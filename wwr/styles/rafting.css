@@ -64,7 +64,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1A2529; /* High contrast default color */
+    color: #1A2529;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -79,10 +79,10 @@ nav ul li a:hover {
 h1 {
     font-family: var(--heading-font);
     position: absolute;
-    top: 10px; /* Reduced from 20px to fit within smaller height */
+    top: 10px;
     width: 100%;
     text-align: center;
-    padding: 10px; /* Reduced padding to fit */
+    padding: 10px;
     background-color: rgba(89, 112, 129, 0.9);
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -102,7 +102,7 @@ h2 {
 
 .hero {
     position: relative;
-    min-height: 120px; /* Reduced from 200px to minimize gap */
+    min-height: 120px;
 }
 
 .hero img {
@@ -119,11 +119,12 @@ article {
     text-align: left;
     background-color: rgba(134, 202, 196, 0.8);
     padding: 16px;
+    color: #000000; /* Improved contrast for mission text */
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 125px; /* Preserved size */
     border-radius: 5px;
     margin-left: 10px;
 }
@@ -133,12 +134,12 @@ article {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin: 4px; /* Further reduced from 8px to minimize gap */
+    margin: 4px;
     padding: 8px;
 }
 
 .contact-form {
-    background-color: #E0E0E0; /* Slightly darker gray to improve contrast boundary */
+    background-color: #E0E0E0;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 20px 0;
@@ -152,21 +153,48 @@ article {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
-    color: #1A2529; /* Dark gray for high contrast (approx. 7.5:1 ratio with #E0E0E0) */
-    font-size: 16px; /* Slightly larger text for readability */
+    color: #1A2529;
+    font-size: 16px;
 }
 
 .contact-form button {
-    background-color: #4682b4;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
+    background-color: #1E3A8A;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 3px solid #15295F;
+    border-radius: 6px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: #356f9a;
+    background-color: #15295F;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.newsletter .contact-form button {
+    background-color: #1E3A8A;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 3px solid #15295F;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.newsletter .contact-form button:hover {
+    background-color: #15295F;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.newsletter .contact-form {
+    max-width: 400px;
 }
 
 address {
@@ -209,7 +237,7 @@ section {
 }
 
 .history-content img {
-    width: 200px;
+    width: 200px; /* Preserved size */
     height: auto;
 }
 
@@ -228,7 +256,7 @@ section {
 
 .adventure-gallery img {
     width: 100%;
-    max-width: 150px;
+    max-width: 150px; /* Preserved size */
     height: auto;
 }
 
@@ -274,44 +302,6 @@ section {
     margin-right: 10px;
 }
 
-.contact-form button {
-    background-color: #1E3A8A;
-    color: #ffffff;
-    padding: 12px 24px;
-    border: 3px solid #15295F;
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-
-.newsletter .contact-form button {
-    background-color: #1E3A8A;
-    color: #ffffff;
-    padding: 12px 24px;
-    border: 3px solid #15295F;
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    font-weight: bold;
-    font-size: 16px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-
-.newsletter .contact-form button:hover {
-    background-color: #15295F;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-.newsletter .contact-form {
-    max-width: 400px;
-}
-
-/* Team section styling */
 .team {
     text-align: center;
     padding: 20px 0;
@@ -368,16 +358,21 @@ section {
 
 .home .cta {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #4682b4;
-    color: white;
+    padding: 12px 24px; /* Updated to match Subscribe button */
+    background-color: #1E3A8A; /* Match Subscribe button background */
+    color: #ffffff; /* Match Subscribe button text */
     text-decoration: none;
-    border-radius: 4px;
-    margin: 10px 0;
+    border: 3px solid #15295F; /* Match Subscribe button border */
+    border-radius: 6px; /* Match Subscribe button radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Match Subscribe button shadow */
+    font-weight: bold; /* Match Subscribe button emphasis */
+    font-size: 16px; /* Match Subscribe button text size */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Match Subscribe button transition */
 }
 
 .home .cta:hover {
-    background-color: #356f9a;
+    background-color: #15295F; /* Match Subscribe button hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Match Subscribe button hover shadow */
 }
 
 .home-gallery {
@@ -530,13 +525,13 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: #4B656C;
+    background-color: #7893A5; /* Lighter background */
 }
 
 footer p {
     margin: 0;
     padding: 0;
-    color: #000000;
+    color: #1A2529; /* Darker text for contrast (~9.0:1 with #7893A5) */
     font-weight: bold;
     font-size: 14px;
 }
@@ -544,7 +539,7 @@ footer p {
 /* Optional: Darken footer background for extra contrast
 footer {
     background-color: #5D7B90; /* Darker shade */
-/* } */ */
+/* } */
 
 footer .socialmedia {
     display: flex;
