@@ -530,20 +530,21 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: var(--primary-color); /* #7EA0B7 */
+    background-color: #4B656C;
 }
 
 footer p {
     margin: 0;
     padding: 0;
-    color: #1A2529; /* Dark gray for high contrast (approx. 6.5:1 ratio with #7EA0B7) */
-    font-weight: bold; /* Enhance visibility */
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
 }
 
-/* Optional: Darken footer background for extra contrast */
+/* Optional: Darken footer background for extra contrast
 footer {
     background-color: #5D7B90; /* Darker shade */
-}
+/* } */ */
 
 footer .socialmedia {
     display: flex;
