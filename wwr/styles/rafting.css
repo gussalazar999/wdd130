@@ -191,7 +191,7 @@ h2 {
     margin-top: 10px;
 }
 
-.contact-form, .newsletter .contact-form {
+.contact-form {
     background-color: #E0E0E0;
     border: 1px solid #ccc;
     padding: 20px;
@@ -229,7 +229,7 @@ h2 {
     margin-right: 10px;
 }
 
-.contact-form button, .newsletter .contact-form button {
+.contact-form button {
     background-color: #1E3A8A;
     color: #ffffff;
     padding: 12px 24px;
@@ -242,7 +242,7 @@ h2 {
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.contact-form button:hover, .newsletter .contact-form button:hover {
+.contact-form button:hover {
     background-color: #15295F;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
